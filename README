@@ -1,70 +1,15 @@
-##########################################
-#
-#	PORT SCAN AUDITOR
-#		by Thong Ngo (thongngo@uns.vn)
-##########################################
-# _Target: All local server
-# _Ports: Wellknow ports (~1000 ports)
-##########################################
-#
-# _Requirement: 
-# 1. NMAP (First)
-# 2. Download this stuff
+UPortAuditor - a product of UNS - UNS.VN
+
+This is a simple tool for Port Audit. That mean you can detect new recent Open/Close Port.
+
+Feature:
+- Find Open Port and COMPARE with last scan.
+- You can check by list of IPs.
+- Setup email to notify the difference
+
+How to install:
+
+$ cat INSTALL
 
 
-# _SETUP_: (Second)
-#
 
-#
-# 1. Extract portscan.tar.gz (Ex: /home/myuser/ => /home/myuser/portscan) 
-#
-
-# 
-# 2. Edit exec.sh 
-#  - Change: ROOT="/home/thong.nd/portscan"
-#  - To: ROOT="/home/myuser/portscan"
-#
-
-#
-# 3. Edit portscan.sh
-#  - Change: ROOT="/home/thong.nd/portscan"
-#  - To: ROOT="/home/myuser/portscan"
-#
-
-#
-# 4. Edit phpmailer/sendmail.php
-#  - Change: ROOT="/home/thong.nd/portscan"
-#  - To: ROOT="/home/myuser/portscan"
-#
-
-#
-# 5. Create A Mailbox for Email Settings. Edit phpmailer/sendmail.php
-# $mail->Host = "mail.gnt-global.com";  // SMTP Server
-# $mail->Username = "portscan"; //User Any mailbox
-# $mail->Password = "somepassword"; // Password for that mailbox
-# $mail->From = "portscan@jp.gnt-global.com"; // Mailbox 
-# $mail-> = "PORT SCAN AUDIT"; // Mailbox Name
-# $mail->AddAddress("it@jp.gnt-global.com"); // Send to ...
-# $mail->Subject = "[Port Scan Audit] $today"; // Subject
-#
-
-#
-# 6. Create a CRON
-# $root@~# crontab -e
-# # Run on 5:00 AM monday & thursday
-# 0 5 * * 1-4 sh /home/myuser/portscan/exec.sh >> /var/log/portscan.log
-#
-
-#
-# 7. Edit listip
-# #Insert 1 ip per line
-# 192.168.1.2
-# 192.168.1.3
-# ...
-# 192.168.1.253
-# 
-
-
-#
-# DONE!!!
-#
