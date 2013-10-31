@@ -21,30 +21,30 @@
 
 # 
 # 2. Edit exec.sh 
-#  - Change: ROOT="/home/thong.nd/portscan"
+#  - Change: ROOT="/home/thongngo/portscan"
 #  - To: ROOT="/home/myuser/portscan"
 #
 
 #
 # 3. Edit portscan.sh
-#  - Change: ROOT="/home/thong.nd/portscan"
+#  - Change: ROOT="/home/thongngo/portscan"
 #  - To: ROOT="/home/myuser/portscan"
 #
 
 #
 # 4. Edit phpmailer/sendmail.php
-#  - Change: ROOT="/home/thong.nd/portscan"
+#  - Change: ROOT="/home/thongngo/portscan"
 #  - To: ROOT="/home/myuser/portscan"
 #
 
 #
 # 5. Create A Mailbox for Email Settings. Edit phpmailer/sendmail.php
-# $mail->Host = "mail.gnt-global.com";  // SMTP Server
+# $mail->Host = "mail.myserver.com";  // SMTP Server
 # $mail->Username = "portscan"; //User Any mailbox
 # $mail->Password = "somepassword"; // Password for that mailbox
-# $mail->From = "portscan@jp.gnt-global.com"; // Mailbox 
+# $mail->From = "portscan@myserver.com"; // Mailbox 
 # $mail-> = "PORT SCAN AUDIT"; // Mailbox Name
-# $mail->AddAddress("it@jp.gnt-global.com"); // Send to ...
+# $mail->AddAddress("it@myserver.com"); // Send to ...
 # $mail->Subject = "[Port Scan Audit] $today"; // Subject
 #
 
